@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBAction func didTappedLoginButton(_ sender: UIButton) {
-        print("Login tapped")
-    }
     
     //weak var button: UIButton
     
@@ -24,5 +21,9 @@ class ViewController: UIViewController {
         print("Tapped")
     }
     
+    @IBAction func didTappedLoginBtn(_ sender: Any) {
+        (UIApplication.shared.delegate as? AppDelegate)?.presentTabBarController()
+    }
+        
 }
 

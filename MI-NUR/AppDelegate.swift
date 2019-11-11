@@ -31,12 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-    @IBAction func didTappedLoginButton(_ sender: Any) {
+    
+    func presentTabBarController(){
+        let tabBarController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MyTabViewController")
+        
         let window = UIWindow()
-        let tabBarController = UIStoryboard(name: "MyTabViewController", bundle: .main).instantiateViewController(withIdentifier: "MyTabViewController")
         window.rootViewController = tabBarController
     }
-    
+
 }
 
