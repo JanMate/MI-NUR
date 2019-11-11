@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qav-Yi-4n5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4yX-GO-79o">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -601,7 +601,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTappedLoginButton:" destination="6JN-Ie-iuN" eventType="touchUpInside" id="gO4-XP-nDo"/>
+                                    <action selector="didTappedLoginButton:" destination="6JN-Ie-iuN" eventType="touchUpInside" id="tQ3-7b-eJc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywh-Xi-VcS">
@@ -697,7 +697,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
         <!--Tab Bar Controller-->
         <scene sceneID="5S7-ND-3UV">
             <objects>
-                <tabBarController id="qav-Yi-4n5" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MyTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qav-Yi-4n5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="WjQ-4R-ekI"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Xb-U6-qRT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

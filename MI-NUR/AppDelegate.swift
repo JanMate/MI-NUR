@@ -32,6 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    @IBAction func didTappedLoginButton(_ sender: Any) {
+        let window = UIWindow()
+        let tabBarController = UIStoryboard(name: "MyTabViewController", bundle: .main).instantiateViewController(withIdentifier: "MyTabViewController")
+        window.rootViewController = tabBarController
+    }
+    
 }
 
