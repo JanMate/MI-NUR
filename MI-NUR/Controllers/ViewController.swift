@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //weak var button: UIButton
+    @IBOutlet weak var fbLoginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,8 @@ class ViewController: UIViewController {
         print("Tapped")
     }
     
-    @IBAction func didTappedLoginBtn(_ sender: Any) {
-        (UIApplication.shared.delegate as? AppDelegate)?.presentTabBarController()
+    @IBAction func didTappedLoginButton(_ sender: Any) {
+      (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.presentTabBarController()
     }
         
 }

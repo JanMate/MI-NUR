@@ -32,12 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func presentTabBarController(){
-        let tabBarController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MyTabViewController")
-        
-        let window = UIWindow()
-        window.rootViewController = tabBarController
-    }
-
+    
 }
 

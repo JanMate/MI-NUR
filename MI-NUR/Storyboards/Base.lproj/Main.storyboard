@@ -586,7 +586,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
         <!--View Controller-->
         <scene sceneID="cE5-rY-ODt">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vno-CU-8XS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vno-CU-8XS" customClass="ViewController" customModule="MI_NUR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ix-iz-NSl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,6 +601,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
+                                    <action selector="didTappedLoginButton:" destination="vno-CU-8XS" eventType="touchUpInside" id="3fr-4r-FKe"/>
                                     <action selector="didTappedLoginButton:" destination="6JN-Ie-iuN" eventType="touchUpInside" id="WNF-wS-hQb"/>
                                 </connections>
                             </button>
@@ -613,6 +614,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="vno-CU-8XS" eventType="touchUpInside" id="g1L-ks-FP4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyE-JY-2xD">
                                 <rect key="frame" x="83" y="365" width="239" height="57"/>
@@ -623,6 +627,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="vno-CU-8XS" eventType="touchUpInside" id="dbc-fX-1Yw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCq-uE-w4q">
                                 <rect key="frame" x="83" y="438" width="239" height="57"/>
@@ -633,6 +640,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="vno-CU-8XS" eventType="touchUpInside" id="IWw-06-lsK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkP-sr-6Q2">
                                 <rect key="frame" x="113" y="663" width="189" height="57"/>
@@ -643,6 +653,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="vno-CU-8XS" eventType="touchUpInside" id="OXr-NK-BJf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driving evidence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akl-a9-UFb">
                                 <rect key="frame" x="93" y="101" width="229" height="39"/>
@@ -688,6 +701,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <viewLayoutGuide key="safeArea" id="bqJ-Aj-AYo"/>
                     </view>
                     <navigationItem key="navigationItem" id="aeu-Mf-n0b"/>
+                    <connections>
+                        <outlet property="fbLoginButton" destination="qHQ-9e-Xtp" id="MTo-pm-CBo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heJ-xu-9pP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6JN-Ie-iuN" userLabel="Exit" sceneMemberID="exit"/>
@@ -897,7 +913,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
         <!--View Controller-->
         <scene sceneID="xkA-Mp-iF7">
             <objects>
-                <viewController id="1SD-bf-gPA" sceneMemberID="viewController">
+                <viewController id="1SD-bf-gPA" customClass="ViewController" customModule="MI_NUR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SAS-Tr-OZN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -949,6 +965,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="1SD-bf-gPA" eventType="touchUpInside" id="ke4-eh-ZpB"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-ri-DBg">
                                 <rect key="frame" x="88" y="505" width="239" height="34"/>
