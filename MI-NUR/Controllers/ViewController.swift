@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func didTappedLoginButton(_ sender: UIButton) {
+        print("Login tapped")
+    }
+    
+    //weak var button: UIButton
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTappedButton(_ sender: UIButton) {
+        print("Tapped")
+    }
+    
 }
 
