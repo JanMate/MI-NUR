@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  DrivingListViewController.swift
 //  MI-NUR
 //
 //  Created by Jan Matějka on 12/11/2019.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class StartViewController: UINavigationController {
+class DrivingListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
-    
 }

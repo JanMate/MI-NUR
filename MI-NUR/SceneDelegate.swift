@@ -57,6 +57,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
+    
+    func presentLoginController(){
+        let loginController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "StartViewController")
+        
+        window = UIWindow(windowScene: scene!)
+        window?.rootViewController = loginController
+        window?.makeKeyAndVisible()
+    }
 
 }
 

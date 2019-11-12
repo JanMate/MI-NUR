@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     //weak var button: UIButton
     @IBOutlet weak var fbLoginButton: UIButton!

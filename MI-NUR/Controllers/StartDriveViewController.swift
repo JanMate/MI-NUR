@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  StartDriveViewController.swift
 //  MI-NUR
 //
 //  Created by Jan Matějka on 12/11/2019.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class StartViewController: UINavigationController {
+class StartDriveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-    
 }
