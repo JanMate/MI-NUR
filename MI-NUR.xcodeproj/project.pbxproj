@@ -22,6 +22,7 @@
 		5EAF7AD1237B4DB20081E7ED /* DrivingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */; };
 		5EAF7AD3237B5BB40081E7ED /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */; };
 		5ED4CE982379964C00562B25 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4CE972379964C00562B25 /* TabViewController.swift */; };
+		5EE413F823894E380074D113 /* NewVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE413F723894E380074D113 /* NewVehicleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingListViewController.swift; sourceTree = "<group>"; };
 		5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		5ED4CE972379964C00562B25 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		5EE413F723894E380074D113 /* NewVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVehicleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +60,16 @@
 		5E6448FA23787DAF0018B4AC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */,
 				5E89AD942373363F0053A727 /* LoginViewController.swift */,
-				5ED4CE972379964C00562B25 /* TabViewController.swift */,
+				5EAF7ACC237B44B70081E7ED /* ManualDriveViewController.swift */,
+				5EE413F723894E380074D113 /* NewVehicleViewController.swift */,
 				5E32B444237A01AE00B00BB3 /* ProfileViewController.swift */,
 				5E584B79237A082B0086D912 /* RegistrationViewController.swift */,
-				5E08EB3F237B3D45008EA6E7 /* StartViewController.swift */,
 				5EAF7ACA237B43400081E7ED /* RunningDriveViewController.swift */,
-				5EAF7ACC237B44B70081E7ED /* ManualDriveViewController.swift */,
 				5EAF7ACE237B48E00081E7ED /* StartDriveViewController.swift */,
-				5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */,
+				5E08EB3F237B3D45008EA6E7 /* StartViewController.swift */,
+				5ED4CE972379964C00562B25 /* TabViewController.swift */,
 				5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -100,6 +103,7 @@
 		5E89AD8F2373363F0053A727 /* MI-NUR */ = {
 			isa = PBXGroup;
 			children = (
+				5EE413F6238948320074D113 /* Models */,
 				5E6448FB23787DC50018B4AC /* Storyboards */,
 				5E6448FA23787DAF0018B4AC /* Controllers */,
 				5E89AD902373363F0053A727 /* AppDelegate.swift */,
@@ -108,6 +112,13 @@
 				5E89AD9E237336430053A727 /* Info.plist */,
 			);
 			path = "MI-NUR";
+			sourceTree = "<group>";
+		};
+		5EE413F6238948320074D113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				5EAF7ACB237B43400081E7ED /* RunningDriveViewController.swift in Sources */,
 				5E89AD952373363F0053A727 /* LoginViewController.swift in Sources */,
 				5EAF7AD1237B4DB20081E7ED /* DrivingListViewController.swift in Sources */,
+				5EE413F823894E380074D113 /* NewVehicleViewController.swift in Sources */,
 				5E89AD912373363F0053A727 /* AppDelegate.swift in Sources */,
 				5E32B445237A01AE00B00BB3 /* ProfileViewController.swift in Sources */,
 				5EAF7AD3237B5BB40081E7ED /* UpdateProfileViewController.swift in Sources */,
