@@ -11,6 +11,13 @@ import UIKit
 class NewVehicleViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var liters: UIPickerView!
+    @IBOutlet weak var manufacture: UITextField!
+    @IBOutlet weak var model: UITextField!
+    @IBOutlet weak var licensePlate: UITextField!
+    @IBOutlet weak var color: UITextField!
+    @IBOutlet weak var state: UITextField!
+    @IBOutlet weak var year: UITextField!
+    
     
     var litersValue = Array(1...30)
     var deciLitersValue = Array(0...9)
@@ -43,6 +50,7 @@ class NewVehicleViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     @IBAction func didSaveButtonTapped(_ sender: Any) {
+        DataService.addVehicle(vehicle: Vehicle(manufacture: manufacture.text!, model: model.text!, licensePlate: licensePlate.text!, color: color.text!, initState: Int(state.text!) ?? 0, consuption: Float(liters.selectedRow(inComponent: 0) + (liters.selectedRow(inComponent: 1) / 10)), year: Int(year.text!) ?? 0))
         navigationController?.popViewController(animated: true)
     }
     

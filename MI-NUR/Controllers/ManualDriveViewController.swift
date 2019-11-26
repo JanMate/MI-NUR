@@ -33,6 +33,8 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     var dateFormat = DateFormatter()
     var start: String?
     var end: String?
+    var vehicleIndex = (DataService.vehicles.count > 0 ? DataService.vehicles.count - 1 : 0)
+    var customerIndex = (DataService.customers.count > 0 ? DataService.customers.count - 1 : 0)
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -57,8 +59,21 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
         endDateText.text = end
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        if DataService.vehicles.count > 0 {
+            carName.text = "\(DataService.vehicles[DataService.vehicles.count - 1].toString())"
+            setStateBefore(value: DataService.vehicles[DataService.vehicles.count - 1].currentState)
+            setStateAfter(value: stateBefore + distance)
+        }
+        if DataService.customers.count > 0 {
+        customerName.text = "\(DataService.customers[DataService.customers.count - 1].name), \(DataService.customers[DataService.customers.count - 1].street), \(DataService.customers[DataService.customers.count - 1].city)"
+        }
+    }
+    
     @IBAction func didTappedSaveButton(_ sender: Any) {
-        
+        let duration = round(dateFormat.date(from: endDateText.text!)! - dateFormat.date(from: startDateText.text!)!)
+        DataService.addDrive(vehicleIndex: vehicleIndex, drive: Drive(startDate: startDateText.text!, endDate: endDateText.text!, duration: Int(duration / 60), vehicle: DataService.vehicles[vehicleIndex], isBusiness: privateBusinessSwitch.isOn, customer: (privateBusinessSwitch.isOn ? DataService.customers[customerIndex] : Customer(name: "", street: "", city: "", zipCode: "")), from: fromText.text!, to: toText.text!, distance: distance, stateBefore: stateBefore, stateAfter: stateAfter))
         self.navigationController?.popToRootViewController(animated: true)
     }
     
@@ -69,8 +84,10 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBAction func didSwitchedPrivateBusinessSwitch(_ sender: Any) {
         if (privateBusinessSwitch.isOn){
             customerChoice.isEnabled = true
+            customerName.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         } else {
             customerChoice.isEnabled = false
+            customerName.textColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         }
     }
     
@@ -125,4 +142,12 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
         stateAfter = value
         stateAfterText.text = String(value)
     }
+}
+
+extension Date {
+
+    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+    }
+
 }

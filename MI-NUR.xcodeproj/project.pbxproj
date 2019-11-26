@@ -22,6 +22,15 @@
 		5EAF7AD1237B4DB20081E7ED /* DrivingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */; };
 		5EAF7AD3237B5BB40081E7ED /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */; };
 		5ED4CE982379964C00562B25 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4CE972379964C00562B25 /* TabViewController.swift */; };
+		5ED5263B238C1587009DD691 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5263A238C1587009DD691 /* User.swift */; };
+		5ED5263D238C16F0009DD691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5263C238C16F0009DD691 /* Vehicle.swift */; };
+		5ED5263F238C1838009DD691 /* Drive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5263E238C1838009DD691 /* Drive.swift */; };
+		5ED52641238C1A38009DD691 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED52640238C1A38009DD691 /* Customer.swift */; };
+		5ED52643238C1C33009DD691 /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED52642238C1C33009DD691 /* NewCustomerViewController.swift */; };
+		5ED52646238C1EDC009DD691 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED52645238C1EDC009DD691 /* DataService.swift */; };
+		5ED52648238D2637009DD691 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED52647238D2637009DD691 /* DateViewController.swift */; };
+		5ED5264A238D2837009DD691 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED52649238D2837009DD691 /* VehicleViewController.swift */; };
+		5ED5264C238D290F009DD691 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5264B238D290F009DD691 /* CustomerViewController.swift */; };
 		5EE413F823894E380074D113 /* NewVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE413F723894E380074D113 /* NewVehicleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +52,15 @@
 		5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingListViewController.swift; sourceTree = "<group>"; };
 		5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		5ED4CE972379964C00562B25 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		5ED5263A238C1587009DD691 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5ED5263C238C16F0009DD691 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		5ED5263E238C1838009DD691 /* Drive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drive.swift; sourceTree = "<group>"; };
+		5ED52640238C1A38009DD691 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		5ED52642238C1C33009DD691 /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
+		5ED52645238C1EDC009DD691 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5ED52647238D2637009DD691 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		5ED52649238D2837009DD691 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		5ED5264B238D290F009DD691 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		5EE413F723894E380074D113 /* NewVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVehicleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +81,7 @@
 				5EAF7AD0237B4DB20081E7ED /* DrivingListViewController.swift */,
 				5E89AD942373363F0053A727 /* LoginViewController.swift */,
 				5EAF7ACC237B44B70081E7ED /* ManualDriveViewController.swift */,
+				5ED52642238C1C33009DD691 /* NewCustomerViewController.swift */,
 				5EE413F723894E380074D113 /* NewVehicleViewController.swift */,
 				5E32B444237A01AE00B00BB3 /* ProfileViewController.swift */,
 				5E584B79237A082B0086D912 /* RegistrationViewController.swift */,
@@ -71,6 +90,9 @@
 				5E08EB3F237B3D45008EA6E7 /* StartViewController.swift */,
 				5ED4CE972379964C00562B25 /* TabViewController.swift */,
 				5EAF7AD2237B5BB40081E7ED /* UpdateProfileViewController.swift */,
+				5ED52647238D2637009DD691 /* DateViewController.swift */,
+				5ED52649238D2837009DD691 /* VehicleViewController.swift */,
+				5ED5264B238D290F009DD691 /* CustomerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +125,7 @@
 		5E89AD8F2373363F0053A727 /* MI-NUR */ = {
 			isa = PBXGroup;
 			children = (
+				5ED52644238C1EB0009DD691 /* Services */,
 				5EE413F6238948320074D113 /* Models */,
 				5E6448FB23787DC50018B4AC /* Storyboards */,
 				5E6448FA23787DAF0018B4AC /* Controllers */,
@@ -114,9 +137,21 @@
 			path = "MI-NUR";
 			sourceTree = "<group>";
 		};
+		5ED52644238C1EB0009DD691 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5ED52645238C1EDC009DD691 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5EE413F6238948320074D113 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5ED5263A238C1587009DD691 /* User.swift */,
+				5ED5263C238C16F0009DD691 /* Vehicle.swift */,
+				5ED5263E238C1838009DD691 /* Drive.swift */,
+				5ED52640238C1A38009DD691 /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,14 +227,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED5264C238D290F009DD691 /* CustomerViewController.swift in Sources */,
+				5ED52648238D2637009DD691 /* DateViewController.swift in Sources */,
+				5ED5264A238D2837009DD691 /* VehicleViewController.swift in Sources */,
+				5ED5263F238C1838009DD691 /* Drive.swift in Sources */,
 				5E584B7A237A082B0086D912 /* RegistrationViewController.swift in Sources */,
 				5E08EB40237B3D45008EA6E7 /* StartViewController.swift in Sources */,
 				5EAF7ACF237B48E00081E7ED /* StartDriveViewController.swift in Sources */,
+				5ED5263D238C16F0009DD691 /* Vehicle.swift in Sources */,
+				5ED52643238C1C33009DD691 /* NewCustomerViewController.swift in Sources */,
+				5ED52646238C1EDC009DD691 /* DataService.swift in Sources */,
 				5EAF7ACD237B44B70081E7ED /* ManualDriveViewController.swift in Sources */,
 				5EAF7ACB237B43400081E7ED /* RunningDriveViewController.swift in Sources */,
 				5E89AD952373363F0053A727 /* LoginViewController.swift in Sources */,
+				5ED5263B238C1587009DD691 /* User.swift in Sources */,
 				5EAF7AD1237B4DB20081E7ED /* DrivingListViewController.swift in Sources */,
 				5EE413F823894E380074D113 /* NewVehicleViewController.swift in Sources */,
+				5ED52641238C1A38009DD691 /* Customer.swift in Sources */,
 				5E89AD912373363F0053A727 /* AppDelegate.swift in Sources */,
 				5E32B445237A01AE00B00BB3 /* ProfileViewController.swift in Sources */,
 				5EAF7AD3237B5BB40081E7ED /* UpdateProfileViewController.swift in Sources */,
