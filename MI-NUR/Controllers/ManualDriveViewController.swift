@@ -33,8 +33,8 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     var dateFormat = DateFormatter()
     var start: String?
     var end: String?
-    var vehicleIndex = (DataService.vehicles.count > 0 ? DataService.vehicles.count - 1 : 0)
-    var customerIndex = (DataService.customers.count > 0 ? DataService.customers.count - 1 : 0)
+    var vehicleIndex = 0
+    var customerIndex = 0
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -62,12 +62,12 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         if DataService.vehicles.count > 0 {
-            carName.text = "\(DataService.vehicles[DataService.vehicles.count - 1].toString())"
-            setStateBefore(value: DataService.vehicles[DataService.vehicles.count - 1].currentState)
+            carName.text = DataService.vehicles[vehicleIndex].toString()
+            setStateBefore(value: DataService.vehicles[vehicleIndex].currentState)
             setStateAfter(value: stateBefore + distance)
         }
         if DataService.customers.count > 0 {
-        customerName.text = "\(DataService.customers[DataService.customers.count - 1].name), \(DataService.customers[DataService.customers.count - 1].street), \(DataService.customers[DataService.customers.count - 1].city)"
+            customerName.text = DataService.customers[customerIndex].toString()
         }
     }
     
@@ -141,6 +141,19 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     func setStateAfter(value: Int) {
         stateAfter = value
         stateAfterText.text = String(value)
+    }
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is CustomerViewController {
+            let vc = segue.destination as? CustomerViewController
+            vc?.customerIndex = customerIndex
+            vc?.mainController = self
+        }
+        if segue.destination is VehicleViewController {
+            let vc = segue.destination as? VehicleViewController
+            vc?.vehicleIndex = vehicleIndex
+            vc?.mainController = self
+        }
     }
 }
 

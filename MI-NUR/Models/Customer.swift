@@ -21,4 +21,7 @@ class Customer {
         self.zipCode = zipCode
     }
     
+    func toString() -> String {
+        return "\(name), \(street), \(city)"
+    }
 }

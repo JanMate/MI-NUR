@@ -233,7 +233,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYG-na-2NA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="907"/>
+            <point key="canvasLocation" x="3972" y="1340"/>
         </scene>
         <!--Add new vehicle-->
         <scene sceneID="rzj-V7-GMF">
@@ -356,7 +356,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDT-oJ-IcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4904.8000000000002" y="272.66009852216752"/>
+            <point key="canvasLocation" x="4194" y="632"/>
         </scene>
         <!--Date View Controller-->
         <scene sceneID="csF-LW-RXh">
@@ -390,7 +390,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mos-YD-SJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5705" y="-456"/>
+            <point key="canvasLocation" x="4905" y="409"/>
         </scene>
         <!--Vehicle View Controller-->
         <scene sceneID="cuH-yX-zMy">
@@ -421,10 +421,13 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VFd-6G-fhy"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="wk7-px-Ozu" id="0eR-dX-073"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ly-7V-svG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6434" y="-455"/>
+            <point key="canvasLocation" x="5697" y="409"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="orm-xx-gUD">
@@ -485,7 +488,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="11.11.2019 12:30" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-jr-uXw">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-jr-uXw">
                                 <rect key="frame" x="13" y="108" width="138" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -495,8 +498,11 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <rect key="frame" x="158" y="112" width="21" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="calendar" catalog="system"/>
+                                <connections>
+                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="lVr-YY-qAj"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="11.11.2019 14:30" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-UN-g7f">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-UN-g7f">
                                 <rect key="frame" x="194" y="108" width="139" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -508,7 +514,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Business drives" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-BK-eFz">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-BK-eFz">
                                 <rect key="frame" x="230" y="161" width="134" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -518,6 +524,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <rect key="frame" x="333" y="160" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <connections>
+                                    <segue destination="PH7-tB-dbi" kind="showDetail" id="nkS-ua-W1x"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zz2-zv-Uyc">
                                 <rect key="frame" x="13" y="205" width="350" height="162"/>
@@ -584,11 +593,17 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <rect key="frame" x="185" y="160" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <connections>
+                                    <segue destination="hhE-Uy-M8p" kind="showDetail" id="Pis-ij-M6Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZK-ZF-dHs">
                                 <rect key="frame" x="338" y="114" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="calendar" catalog="system"/>
+                                <connections>
+                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="egm-Hg-Bh2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1256,7 +1271,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAB-kB-Oje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5705" y="273"/>
+            <point key="canvasLocation" x="5697" y="-455"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="xkA-Mp-iF7">
@@ -1395,10 +1410,50 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Dyg-Im-vs4"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="cql-MD-jy4" id="hdT-ff-ZpR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUT-Qb-aaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6433" y="273"/>
+            <point key="canvasLocation" x="6500" y="-455"/>
+        </scene>
+        <!--Type Drive View Controller-->
+        <scene sceneID="aHd-It-qVB">
+            <objects>
+                <viewController storyboardIdentifier="TypeDriveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PH7-tB-dbi" customClass="TypeDriveViewController" customModule="MI_NUR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roi-2z-6rX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOp-zK-0JE">
+                                <rect key="frame" x="0.0" y="247" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-kZ-gsT">
+                                <rect key="frame" x="85" y="527" width="205" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTappedOkButton:" destination="PH7-tB-dbi" eventType="touchUpInside" id="3KY-Nh-Rz9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tcR-Ac-uF2"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="eOp-zK-0JE" id="7GC-1i-Qju"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoH-49-dQm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6449" y="409"/>
         </scene>
     </scenes>
     <resources>
@@ -1416,6 +1471,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fAa-UH-FmJ"/>
+        <segue reference="vCA-k6-Lpk"/>
         <segue reference="jSg-WB-Ajh"/>
         <segue reference="77J-1Q-GBM"/>
     </inferredMetricsTieBreakers>

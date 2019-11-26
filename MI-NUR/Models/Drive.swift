@@ -36,6 +36,6 @@ class Drive {
     }
     
     func toString() -> String {
-        return "\(startDate), \(from), \(to), \(distance) km"
+        return "\(startDate), \(from) -> \(to), \(distance) km"
     }
 }
