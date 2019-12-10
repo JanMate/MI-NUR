@@ -42,7 +42,7 @@ class DrivingListViewController: UIViewController, UITableViewDataSource, UITabl
         selectedCarText.isEnabled = false
         driveTypeText.isEnabled = false
         tableView.refreshControl = UIRefreshControl()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
+        tableView.register(NativeCell.self, forCellReuseIdentifier: NativeCell.reuseIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.refreshControl?.addTarget(self, action: #selector(refreshTriggered(_:)), for: .valueChanged)
@@ -87,18 +87,10 @@ class DrivingListViewController: UIViewController, UITableViewDataSource, UITabl
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: NativeCell.reuseIdentifier, for: indexPath) as! NativeCell
+                
+        cell.drive = DataService.vehicles[vehicleIndex].drives[(DataService.vehicles[vehicleIndex].drives.count - 1) - indexPath.row]
         
-        if typeIndex == 1 && DataService.vehicles[vehicleIndex].drives[indexPath.row].isBusiness {
-            cell.textLabel?.text = DataService.vehicles[vehicleIndex].drives[indexPath.row].toString()
-        }
-        if typeIndex == 2 && !DataService.vehicles[vehicleIndex].drives[indexPath.row].isBusiness {
-            cell.textLabel?.text = DataService.vehicles[vehicleIndex].drives[indexPath.row].toString()
-        }
-        if typeIndex == 0 {
-            cell.textLabel?.text = DataService.vehicles[vehicleIndex].drives[indexPath.row].toString()
-        }
-
         return cell
     }
     
@@ -115,5 +107,34 @@ class DrivingListViewController: UIViewController, UITableViewDataSource, UITabl
             vc?.mainController = self
             vc?.typeIndex = typeIndex
         }
+    }
+    
+    @IBAction func didTappedDateTextBox(_ sender: Any) {
+    }
+    
+    @IBAction func didTappedVehicleTextBox(_ sender: Any) {
+    }
+    
+    @IBAction func didTappedTypeDriveTextBox(_ sender: Any) {
+    }
+}
+final class NativeCell: UITableViewCell {
+    static let reuseIdentifier = "NativeCell"
+    
+    var drive: Drive? {
+        didSet {
+            textLabel?.text = drive?.title()
+            detailTextLabel?.text = drive?.subTitle()
+        }
+    }
+    
+    // MARK: - Initializers
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

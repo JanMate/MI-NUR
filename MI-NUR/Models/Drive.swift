@@ -38,4 +38,15 @@ class Drive {
     func toString() -> String {
         return "\(startDate), \(from) -> \(to), \(distance) km"
     }
+    
+    func title() -> String {
+        return "\(from) -> \(to)"
+    }
+    
+    func subTitle() -> String {
+        if (duration / 60) < 10 {
+            return "\(startDate) - \(endDate), \(distance) km, 0\(duration / 60):\(duration % 60)"
+        }
+        return "\(startDate) - \(endDate), \(distance) km, \(duration / 60):\(duration % 60)"
+    }
 }

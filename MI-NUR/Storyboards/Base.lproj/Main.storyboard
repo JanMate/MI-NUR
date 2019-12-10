@@ -56,15 +56,6 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <rect key="frame" x="10" y="107" width="143" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-In-R5l">
-                                <rect key="frame" x="275" y="110" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="lock.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="didTappedLogoutButton:" destination="fBs-Xt-vSz" eventType="touchUpInside" id="L2O-5W-b8A"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Evn-vf-jkG">
                                 <rect key="frame" x="10" y="315" width="349" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,7 +89,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vehicles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ws-6E-mz0">
-                                <rect key="frame" x="14" y="283" width="87" height="29"/>
+                                <rect key="frame" x="14" y="277" width="87" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -111,20 +102,40 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smY-Yc-j2A">
-                                <rect key="frame" x="322" y="110" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="pencil" catalog="system"/>
-                                <connections>
-                                    <segue destination="6Sl-8h-0dj" kind="show" id="CxQ-Ha-9aL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJD-Yk-cxM">
-                                <rect key="frame" x="317" y="273" width="39" height="39"/>
+                                <rect key="frame" x="316" y="270" width="42" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
                                 <connections>
                                     <segue destination="6wI-mD-nzk" kind="show" id="ohn-LX-Hsj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-In-R5l">
+                                <rect key="frame" x="283" y="105" width="30" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" backgroundImage="lock.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="didTappedLogoutButton:" destination="fBs-Xt-vSz" eventType="touchUpInside" id="L2O-5W-b8A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-Ws-ov9">
+                                <rect key="frame" x="311" y="102" width="53" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="didTappedLogoutButton:" destination="fBs-Xt-vSz" eventType="touchUpInside" id="Q56-zl-u3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smY-Yc-j2A">
+                                <rect key="frame" x="231" y="103" width="37" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="pencil" catalog="system">
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Sl-8h-0dj" kind="show" id="CxQ-Ha-9aL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -493,37 +504,41 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV3-6B-B3N">
-                                <rect key="frame" x="158" y="112" width="21" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="calendar" catalog="system"/>
                                 <connections>
-                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="lVr-YY-qAj"/>
+                                    <action selector="didTappedDateTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="lHK-zR-RIh"/>
                                 </connections>
-                            </button>
+                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-UN-g7f">
                                 <rect key="frame" x="194" y="108" width="139" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didTappedDateTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="Wad-xG-Yks"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select vehicle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qva-2C-qK9">
                                 <rect key="frame" x="13" y="161" width="204" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didTappedVehicleTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="24l-iG-t7i"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-BK-eFz">
-                                <rect key="frame" x="230" y="161" width="134" height="34"/>
+                                <rect key="frame" x="224" y="161" width="140" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didTappedTypeDriveTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="UAq-ox-yce"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb5-lL-XSv">
-                                <rect key="frame" x="333" y="160" width="36" height="36"/>
+                                <rect key="frame" x="330" y="162" width="34" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <state key="normal" backgroundImage="arrow.down.square" catalog="system"/>
                                 <connections>
                                     <segue destination="PH7-tB-dbi" kind="showDetail" id="nkS-ua-W1x"/>
                                 </connections>
@@ -590,19 +605,27 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ca-FC-TMD">
-                                <rect key="frame" x="185" y="160" width="36" height="36"/>
+                                <rect key="frame" x="182" y="163" width="34" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <state key="normal" backgroundImage="arrow.down.square" catalog="system"/>
                                 <connections>
                                     <segue destination="hhE-Uy-M8p" kind="showDetail" id="Pis-ij-M6Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZK-ZF-dHs">
-                                <rect key="frame" x="338" y="114" width="22" height="22"/>
+                                <rect key="frame" x="334" y="112" width="33" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="calendar" catalog="system"/>
+                                <state key="normal" backgroundImage="calendar" catalog="system"/>
                                 <connections>
                                     <segue destination="zKI-wv-ZfJ" kind="showDetail" id="egm-Hg-Bh2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV3-6B-B3N">
+                                <rect key="frame" x="153" y="110.66666666666663" width="33" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar" catalog="system"/>
+                                <connections>
+                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="lVr-YY-qAj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -652,15 +675,19 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuC-mA-Fb0">
-                                <rect key="frame" x="119" y="653" width="139" height="30"/>
+                                <rect key="frame" x="48" y="584" width="278" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter drive manually"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Enter drive manually">
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
                                 <connections>
                                     <segue destination="Bpf-Pf-gIJ" kind="show" id="LeX-tl-9QQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egc-kc-UTs">
-                                <rect key="frame" x="78" y="388" width="219" height="64"/>
+                                <rect key="frame" x="36" y="340" width="302" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -680,7 +707,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83Q-uo-ugd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655" y="-455"/>
+            <point key="canvasLocation" x="2653.5999999999999" y="-455.17241379310349"/>
         </scene>
         <!--Add new business drive-->
         <scene sceneID="2Hy-a9-NMm">
@@ -691,7 +718,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WV-mM-N9C">
-                                <rect key="frame" x="78" y="561" width="219" height="64"/>
+                                <rect key="frame" x="44" y="521" width="286" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -797,8 +824,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oc-xp-ir7">
-                                <rect key="frame" x="145" y="669" width="85" height="30"/>
+                                <rect key="frame" x="121" y="653" width="133" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Cancel drive"/>
                                 <connections>
                                     <action selector="didTappedCancelDriveButton:" destination="szZ-VU-A50" eventType="touchUpInside" id="MpD-Ca-ObJ"/>
@@ -984,26 +1012,19 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-wG-2OD">
-                                <rect key="frame" x="157" y="107" width="21" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="calendar" catalog="system"/>
-                                <connections>
-                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="Wdl-vn-LhW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGr-tK-RnH">
-                                <rect key="frame" x="290" y="149" width="39" height="39"/>
+                                <rect key="frame" x="292" y="152" width="38" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
                                 <connections>
                                     <segue destination="6wI-mD-nzk" kind="show" id="77J-1Q-GBM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-7H-xup">
-                                <rect key="frame" x="264" y="237" width="39" height="39"/>
+                                <rect key="frame" x="265" y="236" width="38" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="plus.circle" catalog="system"/>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
                                 <connections>
                                     <segue destination="C2T-YL-8ds" kind="show" id="eVf-8k-gey"/>
                                 </connections>
@@ -1015,9 +1036,9 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs1-Bc-Mjt">
-                                <rect key="frame" x="337" y="109" width="22" height="22"/>
+                                <rect key="frame" x="331" y="105" width="31" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="calendar" catalog="system"/>
+                                <state key="normal" backgroundImage="calendar" catalog="system"/>
                                 <connections>
                                     <segue destination="zKI-wv-ZfJ" kind="showDetail" id="jSg-WB-Ajh"/>
                                 </connections>
@@ -1079,11 +1100,11 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9R-dr-K18">
-                                <rect key="frame" x="246" y="149" width="36" height="36"/>
+                                <rect key="frame" x="246" y="152" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <state key="normal" backgroundImage="arrow.down.square" catalog="system"/>
                                 <connections>
-                                    <segue destination="hhE-Uy-M8p" kind="showDetail" id="vCA-k6-Lpk"/>
+                                    <action selector="didTappedVehicleSelectButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="eBB-9u-Vjn"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select customer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-s2-ILp">
@@ -1093,11 +1114,11 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ael-VO-Bqo">
-                                <rect key="frame" x="221" y="239" width="36" height="36"/>
+                                <rect key="frame" x="221" y="240" width="36" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.down.square" catalog="system"/>
+                                <state key="normal" backgroundImage="arrow.down.square" catalog="system"/>
                                 <connections>
-                                    <segue destination="inG-1e-3la" kind="showDetail" id="Eid-3Q-NvD"/>
+                                    <action selector="didTappedCustomerSelectButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="GjU-fW-f4r"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsq-qg-wxe">
@@ -1164,7 +1185,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRE-C7-yXg">
-                                <rect key="frame" x="85" y="666" width="205" height="55"/>
+                                <rect key="frame" x="85" y="659" width="205" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1174,6 +1195,14 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 </state>
                                 <connections>
                                     <action selector="didTappedSaveButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="5dE-xi-456"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-wG-2OD">
+                                <rect key="frame" x="151" y="104.66666666666674" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar" catalog="system"/>
+                                <connections>
+                                    <segue destination="zKI-wv-ZfJ" kind="showDetail" id="Wdl-vn-LhW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1188,7 +1217,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                         <outlet property="customerName" destination="ECz-s2-ILp" id="spB-tq-Ym2"/>
                         <outlet property="distancePicker" destination="H7b-bL-NuX" id="7WH-sT-eeb"/>
                         <outlet property="distanceSlider" destination="GiO-uI-sey" id="7le-5P-gN6"/>
-                        <outlet property="endDateText" destination="k0I-YZ-tGx" id="dAx-n0-5MR"/>
+                        <outlet property="endDateText" destination="k0I-YZ-tGx" id="PYX-vX-VnO"/>
                         <outlet property="fromText" destination="nsq-qg-wxe" id="b8j-qh-rk0"/>
                         <outlet property="privateBusinessSwitch" destination="ysN-LL-ewT" id="axP-lx-d4C"/>
                         <outlet property="saveDriveButton" destination="hRE-C7-yXg" id="Ady-7g-8QK"/>
@@ -1219,7 +1248,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lG-UX-P3y">
-                                <rect key="frame" x="85" y="643" width="205" height="55"/>
+                                <rect key="frame" x="85" y="643" width="205" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1271,7 +1300,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAB-kB-Oje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5697" y="-455"/>
+            <point key="canvasLocation" x="5696.8000000000002" y="-455.17241379310349"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="xkA-Mp-iF7">
@@ -1386,7 +1415,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
             <objects>
                 <viewController storyboardIdentifier="CustomerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="inG-1e-3la" customClass="CustomerViewController" customModule="MI_NUR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H8V-IF-DHh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cql-MD-jy4">
@@ -1470,8 +1499,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
         <image name="waveform.path.ecg" catalog="system" width="64" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fAa-UH-FmJ"/>
-        <segue reference="vCA-k6-Lpk"/>
+        <segue reference="LeX-tl-9QQ"/>
         <segue reference="jSg-WB-Ajh"/>
         <segue reference="77J-1Q-GBM"/>
     </inferredMetricsTieBreakers>

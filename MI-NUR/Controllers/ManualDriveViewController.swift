@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var saveDriveButton: UIButton!
     @IBOutlet weak var cancelDriveButton: UIButton!
@@ -47,7 +47,9 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         carName.isEnabled = false
+        carName.delegate = self
         customerName.isEnabled = false
+        customerName.delegate = self
         distancePicker.dataSource = self
         distancePicker.delegate = self
         setDistance(value: distance)
@@ -155,6 +157,32 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
             vc?.mainController = self
         }
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == carName {
+            self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "VehicleViewController") ?? VehicleViewController(), sender: Any?.self)
+        }
+        if textField == customerName {
+            self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "CustomerViewController") ?? CustomerViewController(), sender: Any?.self)
+        }
+    }
+    
+    @IBAction func didTappedVehicleSelectButton(_ sender: Any) {
+        if carName.text == "" {
+            self.navigationController?.pushViewController(storyboard?.instantiateViewController(withIdentifier: "NewVehicleViewController") ?? NewVehicleViewController(), animated: true)
+        } else {
+            self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "VehicleViewController") ?? VehicleViewController(), sender: Any?.self)
+        }
+    }
+    
+    @IBAction func didTappedCustomerSelectButton(_ sender: Any) {
+        if customerName.text == "" {
+            self.navigationController?.pushViewController(storyboard?.instantiateViewController(withIdentifier: "NewCustomerViewController") ?? NewCustomerViewController(), animated: true)
+        } else {
+            self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "CustomerViewController") ?? CustomerViewController(), sender: Any?.self)
+        }
+    }
+    
 }
 
 extension Date {

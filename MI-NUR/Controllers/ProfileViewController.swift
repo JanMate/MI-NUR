@@ -38,7 +38,26 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     @IBAction func didTappedLogoutButton(_ sender: Any) {
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.presentLoginController()
+       
+        // Declare Alert message
+        let dialogMessage = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
+        
+        // Create OK button with action handler
+        let ok = UIAlertAction(title: "Yes", style: .destructive, handler: { (action) -> Void in
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.presentLoginController()
+        })
+        
+        // Create Cancel button with action handlder
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+            
+        }
+        
+        //Add OK and Cancel button to dialog message
+        dialogMessage.addAction(ok)
+        dialogMessage.addAction(cancel)
+        
+        // Present dialog message to user
+        self.present(dialogMessage, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

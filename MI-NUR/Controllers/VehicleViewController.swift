@@ -23,6 +23,7 @@ class VehicleViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
         pickerView.selectRow(vehicleIndex, inComponent: 0, animated: true)        
     }
     
