@@ -176,9 +176,9 @@ class ManualDriveViewController: UIViewController, UIPickerViewDataSource, UIPic
     }
     
     @IBAction func didTappedCustomerSelectButton(_ sender: Any) {
-        if customerName.text == "" {
+        if customerName.text == "" && customerChoice.isEnabled {
             self.navigationController?.pushViewController(storyboard?.instantiateViewController(withIdentifier: "NewCustomerViewController") ?? NewCustomerViewController(), animated: true)
-        } else {
+        } else if customerName.text != "" && customerChoice.isEnabled {
             self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "CustomerViewController") ?? CustomerViewController(), sender: Any?.self)
         }
     }

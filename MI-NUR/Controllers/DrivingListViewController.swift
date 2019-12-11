@@ -108,14 +108,17 @@ class DrivingListViewController: UIViewController, UITableViewDataSource, UITabl
             vc?.typeIndex = typeIndex
         }
     }
-    
-    @IBAction func didTappedDateTextBox(_ sender: Any) {
-    }
-    
+        
     @IBAction func didTappedVehicleTextBox(_ sender: Any) {
+        if selectedCarText.text == "" {
+            self.navigationController?.pushViewController(storyboard?.instantiateViewController(withIdentifier: "NewVehicleViewController") ?? NewVehicleViewController(), animated: true)
+        } else {
+            self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "VehicleViewController") ?? VehicleViewController(), sender: Any?.self)
+        }
     }
     
     @IBAction func didTappedTypeDriveTextBox(_ sender: Any) {
+        self.navigationController?.showDetailViewController(storyboard?.instantiateViewController(withIdentifier: "TypeDriveViewController") ?? TypeDriveViewController(), sender: Any?.self)
     }
 }
 final class NativeCell: UITableViewCell {

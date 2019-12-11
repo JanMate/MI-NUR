@@ -504,20 +504,14 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="didTappedDateTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="lHK-zR-RIh"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-UN-g7f">
                                 <rect key="frame" x="194" y="108" width="139" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="didTappedDateTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="Wad-xG-Yks"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select vehicle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qva-2C-qK9">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add new vehicle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qva-2C-qK9">
                                 <rect key="frame" x="13" y="161" width="204" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -626,6 +620,20 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <state key="normal" backgroundImage="calendar" catalog="system"/>
                                 <connections>
                                     <segue destination="zKI-wv-ZfJ" kind="showDetail" id="lVr-YY-qAj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QY-Az-HVu">
+                                <rect key="frame" x="13" y="161" width="204" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTappedVehicleTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="w8S-xB-l6h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4p-uc-mvQ">
+                                <rect key="frame" x="225" y="161" width="139" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTappedTypeDriveTextBox:" destination="o2F-zh-3Db" eventType="touchUpInside" id="Dh7-zb-5WW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1043,7 +1051,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <segue destination="zKI-wv-ZfJ" kind="showDetail" id="jSg-WB-Ajh"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select vehicle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-Q1-dcF">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add new vehicle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-Q1-dcF">
                                 <rect key="frame" x="10" y="151" width="273" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1107,7 +1115,7 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                     <action selector="didTappedVehicleSelectButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="eBB-9u-Vjn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select customer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-s2-ILp">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add new customer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-s2-ILp">
                                 <rect key="frame" x="16" y="239" width="241" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1203,6 +1211,20 @@ The generated Lorem Ipsum is therefore always free from repetition, injected hum
                                 <state key="normal" backgroundImage="calendar" catalog="system"/>
                                 <connections>
                                     <segue destination="zKI-wv-ZfJ" kind="showDetail" id="Wdl-vn-LhW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPm-Gg-DVY">
+                                <rect key="frame" x="10" y="151" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTappedVehicleSelectButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="doc-cW-usP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZH-53-htG">
+                                <rect key="frame" x="16" y="240" width="241" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTappedCustomerSelectButton:" destination="Bpf-Pf-gIJ" eventType="touchUpInside" id="dSD-sA-EIi"/>
                                 </connections>
                             </button>
                         </subviews>
